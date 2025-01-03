@@ -3,8 +3,8 @@ Retrieves the latest forge versions from the forge website and
 saves them to the version_list.json file.
 """
 
-import requests
 import json
+import requests
 from bs4 import BeautifulSoup
 
 FILENAME = "version_list.json"
