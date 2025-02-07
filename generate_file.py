@@ -24,6 +24,35 @@ def get_forge_versions():
 
     page_links = soup.select("div a[href*='index']")
 
+    # Active version
+    on_page_version = soup.select("li.elem-active")
+    for version in on_page_version:
+        version = version.text.strip()
+        sub_versions = soup.select("a[href*='maven']")
+        for subver in sub_versions:
+            if not subver.get("title") == "Direct Download":
+                continue
+
+            direct_download_url = subver.get("href")
+            if not ".jar" in direct_download_url or "universal" in direct_download_url:
+                continue
+
+            forge_version = None
+
+            for sect in subver.get("href").split("/"):
+                if (
+                    forge_version is not None
+                    or not sect.replace(".", "").replace("-", "").isnumeric()
+                ):
+                    continue
+
+                forge_version = sect
+
+            if forge_version is None:
+                continue
+
+            data_dict[forge_version] = direct_download_url
+
     for link in page_links:
         version = link.text.strip()
         if version == "Project Index":
