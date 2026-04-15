@@ -1,4 +1,7 @@
 {
+    "26.1.2-64.0.4": "https://maven.minecraftforge.net/net/minecraftforge/forge/26.1.2-64.0.4/forge-26.1.2-64.0.4-installer.jar",
+    "26.1.2-64.0.3": "https://maven.minecraftforge.net/net/minecraftforge/forge/26.1.2-64.0.3/forge-26.1.2-64.0.3-installer.jar",
+    "26.1.2-64.0.2": "https://maven.minecraftforge.net/net/minecraftforge/forge/26.1.2-64.0.2/forge-26.1.2-64.0.2-installer.jar",
     "26.1.2-64.0.1": "https://maven.minecraftforge.net/net/minecraftforge/forge/26.1.2-64.0.1/forge-26.1.2-64.0.1-installer.jar",
     "26.1.2-64.0.0": "https://maven.minecraftforge.net/net/minecraftforge/forge/26.1.2-64.0.0/forge-26.1.2-64.0.0-installer.jar",
     "26.1.1-63.0.2": "https://maven.minecraftforge.net/net/minecraftforge/forge/26.1.1-63.0.2/forge-26.1.1-63.0.2-installer.jar",
